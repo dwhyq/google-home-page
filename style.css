@@ -1,0 +1,177 @@
+html {
+    box-sizing: border-box;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 100%;
+    min-height: 88vh;
+}
+
+/* The nav display flex below also applies to  every other nav selector*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+ul a, ul img {
+    padding: 0 8px;
+}
+
+ul a {
+    text-decoration: none;
+    margin: 5px;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+ul .image {
+    height: 3vh;
+}
+ul .image:hover {
+    border: 1px solid grey;
+    border-radius: 100px;
+    box-shadow: 0 0 2px whitesmoke;
+    cursor: pointer;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12em auto;
+}
+.sec-image {
+    width: 300px;
+}
+.input-section {
+    border: 1px solid grey;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 5vh;
+}
+.input-section:hover {
+    box-shadow: 0 0 5px lightgrey;
+}
+.input-section input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+.icon {
+    padding: 0.8em 0.9em;
+}
+.under-input {
+    padding-top: 1em;
+}
+button {
+    padding: 0.6em 1em;
+    margin: 0 0.7em;
+    border-radius: 5px;
+    border: none;
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 3px lightgrey;
+}
+.midtext {
+    display: flex;
+    align-items: center;
+}
+.midtext a {
+    text-decoration: none;
+    margin-left: 0.5em;
+    color: black;
+}
+.midtext a:hover {
+    text-decoration: underline;
+}
+/* position and bottom properties will keep the footer stuck at the bottom*/
+footer {
+    background-color: #f2f2f2;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+
+}
+.footer-left {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5em;
+    align-items: center;
+}
+
+/* The media query written below takes effect when screen size is below 600px*/
+
+@media (max-width: 600px) {
+
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left {
+        justify-content: center;
+    }
+
+    .footer-right {
+        justify-content: center;
+        margin-right: 1em;
+    }
+    
+    .input-section {
+        width: 96vw;
+    }
+}
+
+/* The media query  written below takes effect when screen size is below 320px*/
+
+@media (max-width: 360px) {
+    
+    .midtext {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .wrapper {
+        width: 115%;
+        min-height: 40vh;
+    }
+
+    .sec-image {
+        width: 180px;
+        min-height: 10vh;
+    }
+
+    .section {
+        width: 86vw;
+    }
+    footer {
+        width: 108%;  
+    }
+
+
+}
