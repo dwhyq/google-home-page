@@ -14,7 +14,7 @@ body {
     min-height: 88vh;
 }
 
-/* The nav display flex below also applies to  every other nav selector*/
+/* The nav display-flex below also applies to  every other nav selector*/
 
 nav {
     display: flex;
