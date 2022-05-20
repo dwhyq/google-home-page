@@ -142,13 +142,18 @@ footer {
     }
     
     .input-section {
-        width: 96vw;
+        width: 400px;
+        height: 4vh;
+
+    }
+    .sec-image {
+        width: 200px;
     }
 }
 
 /* The media query  written below takes effect when screen size is below 320px*/
 
-@media (max-width: 360px) {
+@media (max-width: 405px) {
     
     .midtext {
         display: flex;
@@ -156,22 +161,45 @@ footer {
         flex-direction: column;
     }
 
-    .wrapper {
-        width: 115%;
-        min-height: 40vh;
-    }
-
     .sec-image {
-        width: 180px;
-        min-height: 10vh;
+        width: 150px;
+        min-height: 4vh;
     }
 
     .section {
-        width: 86vw;
+        width: 86vw
     }
     footer {
         width: 108%;  
     }
+    .input-section {
+        width: 300px;
+        height: 4vh;
+    }
+}
 
+@media (max-width: 316px) {
+
+    section {
+        margin-left: 3em;
+    
+    }
+    .input-section {
+        display: flex;
+       
+    }
+    .under-input {
+        display: flex;
+    }
+
+}
+
+@media (max-width: 258px) {
+
+    section {
+        margin-left: 7em;
+        margin-top: 20em;
+    
+    }
 
 }
